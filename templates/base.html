@@ -13,7 +13,7 @@
     <header>
         <div class="title">
             <div class="logo">
-                <img src="{{ url_for('static', filename = 'image/blogo.png') }}" alt="logo">
+                <img src="{{ url_for('static', filename = 'image/blogo.svg') }}" alt="logo" style="background-color: transparent;">
             </div>
             <div class="blode"><h1>Blode</h1> </div>
         </div>
@@ -60,7 +60,7 @@
 
                             {% endblock %}</h2> 
                         <hr>
-                        <textarea id="content_text">
+                        <textarea id="content_text" readonly>
                             {% block content %}
 
                             {% endblock %}
