@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/puppy.css') }}">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- left part of the page starts here  -->
+        <div id="left">
+            <!-- logo  -->
+            <div class="logo">
+                <div class="logo_part_ls">
+                    <div class="logo_img">
+                        <img src="{{ url_for('static', filename = 'image/blogo.png') }}" alt="">
+                    </div>
+                    <div class="name_blode">
+                        <h1>Blode</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- logo end  -->
+            <!-- img  -->
+            <div class="sign_in_img">
+                {% block img %}
+                {% endblock %}
+            </div>
+            <!-- img end  -->
+        </div>
+        <!-- left part of the page ends here  -->
+
+        <!-- right part of the page starts here  -->
+        <div id="right">
+            {% block form %}
+            {% endblock %}
+        </div>
+        <!-- right side of the page ends here  -->
+    </div>
+    
+</body>
+</html>

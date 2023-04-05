@@ -1,0 +1,23 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "First blog post",
+        "body": "This is the body of the first blog post.",
+        "date_created": "2022-02-11T18:12:20.463Z"
+      },
+      {
+        "id": 2,
+        "title": "Second blog post",
+        "body": "This is the body of the second blog post.",
+        "date_created": "2022-02-12T12:32:10.986Z"
+      },
+      {
+        "id": 3,
+        "title": "Third blog post",
+        "body": "This is the body of the third blog post.",
+        "date_created": "2022-02-14T08:44:55.224Z"
+      }
+    ]
+  }
+  

@@ -1,0 +1,42 @@
+{% extends 'auth_base.html' %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block img %}
+    <img src="{{ url_for('static', filename = 'image/login_img.png') }}" alt="">
+{% endblock %}
+
+{% block form %}
+    <h1 class="page_in">LOGIN</h1> <!--page head -->
+    <div id="signin_right">
+        <div id="signin_login">
+            <form  action="/login" method="POST">
+                <div>
+                    <!-- id  -->
+                    
+                    <input type="text" placeholder="Username"class="text-input" id="USERNAME" name="username">
+                </div>
+                <!-- id  -->
+                <div>
+                    
+                    <input type="password" placeholder="Password" class="text-input" id="PASSWORD" name="password">
+                </div>
+                <!-- button  -->
+                <button type="submit" class="primary-btn">
+                    LOG_IN 
+                </button>
+            </form>
+            <!-- this part is specific for sign in page  -->
+            
+            <div class="or">
+                <hr class="bar">
+                <span>OR</span>
+                <hr class="bar">
+            </div>
+            <a href="{{ url_for('signup') }}" class="secondary-btn">create an account</a>
+            <!-- specific part ends here  -->
+        </div>
+    </div>
+{% endblock %}

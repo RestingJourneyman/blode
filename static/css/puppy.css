@@ -1,0 +1,416 @@
+@font-face {
+    font-family: jaldiBold;
+    src: url(../fonts/Jaldi-Bold.ttf);
+}
+
+@font-face {
+    font-family: jaldi;
+    src: url(../fonts/Jaldi-Regular.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   
+}
+
+
+body{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    /* background: #181818; */
+    /* color: #fff; */
+    overflow: hidden;
+
+}
+
+
+
+#wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+
+#left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100vh;
+    background-color: #fee99b;
+
+}
+#right{
+    flex: 1;
+    
+
+}
+
+/* ------signin----- */
+/* left */
+.logo_part_ls{
+    display: flex;
+    padding: 30px;
+}
+.logo_part_ls .logo_img img{
+    height: 70px;
+    width: 70px;
+}
+.logo_part_ls .name_blode{
+    display: flex;
+    align-items: center;
+    font-family: jaldiBold;
+    margin-left: 20px ;
+}
+.sign_in_img img{
+    display: flex;
+    height: 500px;
+    width:550px;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 30px; */
+    /* margin: 90px 90px; */
+    background-color: #fdf0c1;
+
+}
+/* end of left */
+
+/* right  */
+.page_in{
+    margin:40px 60px;
+    font-family:jaldi ;
+}
+#signin_right{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* classes common for both log in and sign in page id=signin_login */
+#signin_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+#signin_login form{
+    width: 80%;
+    padding-bottom: 2rem;
+}
+#signin_login .text-input{
+    font-family: jaldi;
+    margin-bottom: 2rem;
+    width: 100%;
+    border-radius: 2px;
+    border-radius: 5px;
+    padding: 0.5rem 0.7rem;
+    line-height: 3rem;
+    border: none;
+    background-color: #ccc;
+    font-size: larger;
+}
+#signin_login .primary-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: jaldi;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    font-size: 20px;
+    
+}
+
+
+
+
+
+/* button */
+.primary-btn{
+    padding: 0.7rem 1rem;
+    height:2.7rem;
+    display: block;
+    border: 0;
+    border-radius:2px ;
+    font-weight: 500;
+    background-color: #F96816;
+    color: #fff;
+    text-decoration: NONE;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.primary-btn:hover{
+    background-color: #cf6530;
+
+}
+
+.secondary-btn{
+    padding: 0.7rem 1rem;
+    height:2.7rem;
+    display: block;
+    border: 1px solid #cf6530;
+    border-radius:2px ;
+    font-weight: 500;
+    background-color: none;
+    /* color: #fff; */
+    text-decoration: NONE;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.5s;
+}
+.secondary-btn:hover{
+    border-color: #cf6530;
+    color: #cf6530;
+    background-color: #ececec;
+
+}
+/* end of buttons css  */
+/* specific for sign in page  */
+#signin .secondary-btn,.or{
+    width: 60%;
+}
+#signin_login .or{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    align-items: center;
+}
+#signin_login .or .bar{
+    flex:auto;
+    border: none;
+    height: 1px;
+    background:black; 
+}
+#signin_login .or span{
+    color:black;
+    padding:0 0.8rem;
+}
+/* end of specific for sign in page  */
+
+
+
+
+
+/* media queiresssss */
+@media(min-width:1200px){
+    #left{
+        flex:4
+    }
+    #right{
+        flex:6
+    }
+}
+@media(max-width:768px){
+body{
+    overflow: auto;
+}
+    #right{
+        display: none;
+    }
+    #left{
+        justify-content: start;
+        margin-top:2vh;
+    }
+    #signin .logo{
+        margin-bottom: 2vh;
+    }
+    #sign-in .text-input{
+        margin-bottom:0.7rem ;
+    }
+    #main-footer{
+        padding-top: 1rem;
+    }
+}
+
+
+/* main html pages css starts here  */
+#main_body {
+    background: linear-gradient(to right, #FFFEC8, #f2c597);
+    background-size: 100% 1000%;
+    background-position: center;
+    
+  }
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+}
+.title{
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+}
+
+header .title .logo img{
+    height: 50px;
+    width: 50px;
+}
+header .title .blode{
+    margin-left: 5px;
+    font-size: large;
+    color: #181818;
+    font-family: jaldiBold;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.user_img img{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+.name{
+    font-family: jaldiBold;
+    font-size: larger;
+
+}
+
+/* aside */
+article{
+    display: flex;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    flex: 0.25;
+    justify-content: center;
+    align-items: center;
+
+}
+.write_btn{
+    margin: 5px 10px;
+}
+/* the button in the class with id pp_write  */
+.write_btn #pp_write{
+
+    display: flex;
+    height: 70px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f89d48;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-family: jaldiBold;
+}
+/* span in button(icon)  */
+.write_btn #pp_write span{
+    margin-right: 5px;
+}
+/* button after hover  */
+.write_btn #pp_write:hover{
+  cursor: pointer;
+  background-color: #e98121;
+}
+
+ .post_number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:50px;
+    flex-direction: column;
+    /* vertical-align:middle; */
+    /* overflow-y: scroll; */
+} 
+/* EACH ELEMENT IN THE LIST  */
+.post_list {
+    
+    height: 350px;
+    width: 400px;
+    border: 2px black solid;
+    overflow-y: scroll;
+    background-color:white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 10px;
+    font-family: jaldi;
+    
+  }
+  .post_list h4{
+    font-weight: bold;
+  }
+  .post_list::-webkit-scrollbar{
+    width: 5px;
+  }
+
+  .post_list::-webkit-scrollbar-track{
+    width: 10px;
+    background-color: #ececec;
+  }
+
+  .post_list::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: #f89d48;
+    border-radius: 7px;
+  }
+  .post{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+
+  
+ 
+ 
+  /* this is the main container which repesents the post divided into 2 parts(head and content) */
+  .post_backend{
+    display: flex;
+    flex-grow: 1;
+  }
+  .content_post{
+    
+    width: 100%;
+    height:500px;
+    border: NONE;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  /* head part of content  */
+  .content_post #head_content{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 700px;
+    font-size: 35px;
+    margin-top: 3px;
+    margin-left: 10px;
+    padding: 15px;
+    font-family: jaldiBold;
+    /* border: 2px solid black; */
+  }
+  /* this is just a line dividing head and content  */
+  .content_post hr{
+    margin: 10px;
+  }
+  /* this is the text area of the content  */
+  .content_post  #content_text{
+    border-radius: 10px;
+    margin-top:5px;
+    height: 500px;
+    width: 8   00px;
+    font-family: jaldi;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    resize: none;
+    cursor:auto;
+    outline: none;
+    /* border: red solid 2px; */
+  } 

@@ -1,0 +1,42 @@
+{% extends 'auth_base.html' %}
+
+{% block title %}
+    Sign In
+{% endblock %}
+
+{% block img %}
+    <img src="{{ url_for('static', filename = 'image/sign_in_img.png') }}" alt="">
+{% endblock %}
+
+{% block form %}
+    <h1 class="page_in">SIGN IN</h1> <!--page head -->
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+    <div id="signin_right">
+        <div id="signin_login">
+            <!-- form  -->
+            <form action = "/signup" method="POST">
+                <!-- id  -->
+                <div>
+                    <input type="text" placeholder="Username"class="text-input" id="USERNAME"
+                    name="username">
+                </div>
+                <!-- id  -->
+                <div>
+                    <input type="password" placeholder="Password" class="text-input" id="PASSWORD"
+                    name="password">
+                </div>
+                <!-- id not given  -->
+                <div>
+                    <input type="password" placeholder="Confirm Password" class="text-input" name="confirm-password">
+                </div>
+                <!-- button  -->
+                <button type="submit" class="primary-btn">
+                    SIGN IN 
+                </button>
+            </form> 
+            <!-- form end       -->
+        </div>
+    </div>
+{% endblock %}
