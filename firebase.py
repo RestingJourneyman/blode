@@ -1,7 +1,7 @@
 import pyrebase
 
 firebaseConfig = {
-    "apiKey": "AIzaSyB99Pk1VQR0DZC3oxfrk-hOTjj5047Zzqc",
+    "apiKey": "AIzaSyB99Pk1VQR0DZC3oxfrk",
     "authDomain": "blode-9b777.firebaseapp.com",
     "projectId": "blode-9b777",
     "storageBucket": "blode-9b777.appspot.com",
