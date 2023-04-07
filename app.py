@@ -104,7 +104,11 @@ def post():
 
 @app.route('/write', methods = ['GET', 'POST'])
 def write():
-    return render_template('write.html')
+    username = session['username']
+    return render_template(
+        'write.html',
+        username = username
+    )
 
 if __name__ == '__main__':
     app.run(debug = True)

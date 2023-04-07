@@ -8,16 +8,16 @@
     src: url(../fonts/Jaldi-Regular.ttf);
 }
 
-* {
+*{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-
+   
 }
 
 
-body {
-    font-family: 'Roboto', sans-serif;
+body{
+    font-family: 'Roboto',sans-serif;
     font-weight: 300;
     /* background: #181818; */
     /* color: #fff; */
@@ -27,15 +27,15 @@ body {
 
 
 
-#wrapper {
+#wrapper{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
+    
 }
 
 
-#left {
+#left{
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -43,36 +43,32 @@ body {
     background-color: #fee99b;
 
 }
-
-#right {
+#right{
     flex: 1;
-
+    
 
 }
 
 /* ------signin----- */
 /* left */
-.logo_part_ls {
+.logo_part_ls{
     display: flex;
     padding: 30px;
 }
-
-.logo_part_ls .logo_img img {
+.logo_part_ls .logo_img img{
     height: 70px;
     width: 70px;
 }
-
-.logo_part_ls .name_blode {
+.logo_part_ls .name_blode{
     display: flex;
     align-items: center;
     font-family: jaldiBold;
-    margin-left: 20px;
+    margin-left: 20px ;
 }
-
-.sign_in_img img {
+.sign_in_img img{
     display: flex;
     height: 500px;
-    width: 550px;
+    width:550px;
     align-items: center;
     justify-content: center;
     /* margin-left: 30px; */
@@ -80,25 +76,22 @@ body {
     background-color: #fdf0c1;
 
 }
-
 /* end of left */
 
 /* right  */
-.page_in {
-    margin: 40px 60px;
-    font-family: jaldi;
+.page_in{
+    margin:40px 60px;
+    font-family:jaldi ;
 }
-
-#signin_right {
+#signin_right{
     height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-
 /* classes common for both log in and sign in page id=signin_login */
-#signin_login {
+#signin_login{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,13 +99,11 @@ body {
     width: 80%;
     padding-bottom: 1rem;
 }
-
-#signin_login form {
+#signin_login form{
     width: 80%;
     padding-bottom: 2rem;
 }
-
-#signin_login .text-input {
+#signin_login .text-input{
     font-family: jaldi;
     margin-bottom: 2rem;
     width: 100%;
@@ -124,8 +115,7 @@ body {
     background-color: #ccc;
     font-size: larger;
 }
-
-#signin_login .primary-btn {
+#signin_login .primary-btn{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,7 +124,7 @@ body {
     margin-bottom: 1rem;
     border-radius: 3px;
     font-size: 20px;
-
+    
 }
 
 
@@ -142,12 +132,12 @@ body {
 
 
 /* button */
-.primary-btn {
+.primary-btn{
     padding: 0.7rem 1rem;
-    height: 2.7rem;
+    height:2.7rem;
     display: block;
     border: 0;
-    border-radius: 2px;
+    border-radius:2px ;
     font-weight: 500;
     background-color: #F96816;
     color: #fff;
@@ -156,18 +146,17 @@ body {
     cursor: pointer;
     transition: background-color 0.5s;
 }
-
-.primary-btn:hover {
+.primary-btn:hover{
     background-color: #cf6530;
 
 }
 
-.secondary-btn {
+.secondary-btn{
     padding: 0.7rem 1rem;
-    height: 2.7rem;
+    height:2.7rem;
     display: block;
     border: 1px solid #cf6530;
-    border-radius: 2px;
+    border-radius:2px ;
     font-weight: 500;
     background-color: none;
     /* color: #fff; */
@@ -176,40 +165,33 @@ body {
     cursor: pointer;
     transition: border-color 0.5s;
 }
-
-.secondary-btn:hover {
+.secondary-btn:hover{
     border-color: #cf6530;
     color: #cf6530;
     background-color: #ececec;
 
 }
-
 /* end of buttons css  */
 /* specific for sign in page  */
-#signin .secondary-btn,
-.or {
+#signin .secondary-btn,.or{
     width: 60%;
 }
-
-#signin_login .or {
+#signin_login .or{
     display: flex;
     flex-direction: row;
     margin-bottom: 1.2rem;
     align-items: center;
 }
-
-#signin_login .or .bar {
-    flex: auto;
+#signin_login .or .bar{
+    flex:auto;
     border: none;
     height: 1px;
-    background: black;
+    background:black; 
 }
-
-#signin_login .or span {
-    color: black;
-    padding: 0 0.8rem;
+#signin_login .or span{
+    color:black;
+    padding:0 0.8rem;
 }
-
 /* end of specific for sign in page  */
 
 
@@ -217,39 +199,32 @@ body {
 
 
 /* media queiresssss */
-@media(min-width:1200px) {
-    #left {
-        flex: 4
+@media(min-width:1200px){
+    #left{
+        flex:4
     }
-
-    #right {
-        flex: 6
+    #right{
+        flex:6
     }
 }
-
-@media(max-width:768px) {
-    body {
-        overflow: auto;
-    }
-
-    #right {
+@media(max-width:768px){
+body{
+    overflow: auto;
+}
+    #right{
         display: none;
     }
-
-    #left {
+    #left{
         justify-content: start;
-        margin-top: 2vh;
+        margin-top:2vh;
     }
-
-    #signin .logo {
+    #signin .logo{
         margin-bottom: 2vh;
     }
-
-    #sign-in .text-input {
-        margin-bottom: 0.7rem;
+    #sign-in .text-input{
+        margin-bottom:0.7rem ;
     }
-
-    #main-footer {
+    #main-footer{
         padding-top: 1rem;
     }
 }
@@ -260,57 +235,50 @@ body {
     background: linear-gradient(to right, #FFFEC8, #f2c597);
     background-size: 100% 1000%;
     background-position: center;
-
-}
-
-header {
+    
+  }
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 40px;
 }
-
-.title {
+.title{
     display: flex;
     align-items: center;
     margin-left: 70px;
 }
 
-header .title .logo img {
+header .title .logo img{
     height: 50px;
     width: 50px;
 }
-
-header .title .blode {
+header .title .blode{
     margin-left: 5px;
     font-size: large;
     color: #181818;
     font-family: jaldiBold;
 }
-
-.user {
+.user{
     display: flex;
     align-items: center;
 }
-
-.user_img img {
+.user_img img{
     width: 30px;
     height: 30px;
     margin-left: 5px;
 }
-
-.name {
+.name{
     font-family: jaldiBold;
     font-size: larger;
 
 }
 
 /* aside */
-article {
+article{
     display: flex;
 }
-
-aside {
+aside{
     display: flex;
     flex-direction: column;
     flex: 0.25;
@@ -318,13 +286,11 @@ aside {
     align-items: center;
 
 }
-
-.write_btn {
+.write_btn{
     margin: 5px 10px;
 }
-
 /* the button in the class with id pp_write  */
-.write_btn #pp_write {
+.write_btn #pp_write{
 
     display: flex;
     height: 70px;
@@ -337,93 +303,87 @@ aside {
     color: white;
     font-family: jaldiBold;
 }
-
 /* span in button(icon)  */
-.write_btn #pp_write span {
+.write_btn #pp_write span{
     margin-right: 5px;
 }
-
 /* button after hover  */
-.write_btn #pp_write:hover {
-    cursor: pointer;
-    background-color: #e98121;
+.write_btn #pp_write:hover{
+  cursor: pointer;
+  background-color: #e98121;
 }
 
-.post_number {
+ .post_number{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top:50px;
     flex-direction: column;
     /* vertical-align:middle; */
     /* overflow-y: scroll; */
-}
-
+} 
 /* EACH ELEMENT IN THE LIST  */
 .post_list {
+    
     height: 350px;
     width: 400px;
     border: 2px black solid;
     overflow-y: scroll;
-    background-color: white;
+    background-color:white;
     border: none;
     border-radius: 10px;
     padding: 10px;
     margin-left: 10px;
     font-family: jaldi;
-}
-
-.post_list h4 {
+    
+  }
+  .post_list h4{
     font-weight: bold;
-}
-
-.post_list::-webkit-scrollbar {
+  }
+  .post_list::-webkit-scrollbar{
     width: 5px;
-}
+  }
 
-.post_list::-webkit-scrollbar-track {
+  .post_list::-webkit-scrollbar-track{
     width: 10px;
     background-color: #ececec;
-}
+  }
 
-.post_list::-webkit-scrollbar-thumb {
+  .post_list::-webkit-scrollbar-thumb{
     width: 10px;
     background-color: #f89d48;
     border-radius: 7px;
-}
-
-.post {
+  }
+  .post{
     display: flex;
     flex: 1;
     justify-content: center;
     align-items: center;
 
-}
+  }
 
 
-
-
-
-/* this is the main container which repesents the post divided into 2 parts(head and content) */
-.post_backend {
+  
+ 
+ 
+  /* this is the main container which repesents the post divided into 2 parts(head and content) */
+  .post_backend{
     display: flex;
     flex-grow: 1;
-}
-
-.content_post {
-
+  }
+  .content_post{
+    
     width: 100%;
-    height: 500px;
+    height:500px;
     border: NONE;
     border-radius: 15px;
     background-color: white;
     display: flex;
     flex-direction: column;
-
-}
-
-/* head part of content  */
-.content_post #head_content {
+   
+  }
+  /* head part of content  */
+  .content_post #head_content{
     display: flex;
     align-items: center;
     height: 70px;
@@ -434,25 +394,116 @@ aside {
     padding: 15px;
     font-family: jaldiBold;
     /* border: 2px solid black; */
-}
-
-/* this is just a line dividing head and content  */
-.content_post hr {
+  }
+  /* this is just a line dividing head and content  */
+  .content_post hr{
     margin: 10px;
-}
-
-/* this is the text area of the content  */
-.content_post #content_text {
+  }
+  /* this is the text area of the content  */
+  .content_post  #content_text{
     border-radius: 10px;
-    margin-top: 5px;
+    margin-top:5px;
     height: 500px;
-    width: 8 00px;
+    width: 8   00px;
     font-family: jaldi;
     font-size: 20px;
     padding: 5px;
     border: none;
     resize: none;
-    cursor: auto;
+    cursor:auto;
     outline: none;
     /* border: red solid 2px; */
+  } 
+  /* input page css starts here  */
+  #write_body {
+    background: linear-gradient(to right, #FFFEC8, #f2c597);
+    background-size: 100% 1000%;
+    background-position: center;
+    
+  }
+
+  #write_body article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .input_page_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_content_heading{
+    height: 100px;
+    width: 700px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    border-radius:15px ;
+    resize: none;
+    font-size: 35px;
+    overflow: none;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: jaldiBold;
+    /* text-transform: capitalize; */
+
+}
+
+.input_content_content{
+    margin-top: 30px;
+    height: 300px;
+    width: 700px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    resize: none;
+    font-size: 20px;
+    padding: 20px;
+    vertical-align: top;
+    font-family: jaldi;
+    
+
+    
+    /* text-transform: capitalize; */
+
+}
+.input_content_content span{
+    font-size: 30px;
+    opacity: 30%;
+    padding: 10px;
+
+
+    
+}
+.buttons_c_s{
+    display: flex;
+    align-items: center;
+     margin: 20px 950px;
+}
+.buttons_c_s button{
+    padding: 10px 20px;
+    font-size: larger;
+    border-radius: 10px;
+    border: none;
+    margin: 20px;
+    font-weight: bold;
+    color: white;
+}
+#cancel{
+    background-color: red;
+
+}
+#save{
+    background-color:#f29537;
+}
+#cancel:hover{
+    background-color: rgb(201, 55, 55);
+
+}
+#save:hover{
+    background-color:#ff8000;
 }
